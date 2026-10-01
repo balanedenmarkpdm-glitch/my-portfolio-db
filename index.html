@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>Denmark S. Balane — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">DB</div>
+        <div>
+          <div class="brand-name">Denmark S. Balane</div>
+          <div class="brand-role">Front-End Developer</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item active" href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a class="nav-item" href="#about"><i class="fa-solid fa-user"></i><span>About Me</span></a>
+        <a class="nav-item" href="#projects"><i class="fa-solid fa-briefcase"></i><span>Projects</span></a>
+        <a class="nav-item" href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+        <a class="nav-item" href="#contact"><i class="fa-regular fa-envelope"></i><span>Contact</span></a>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="social-title">SOCIALS</div>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i>Email</a>
+      </div>
+
+      <div class="sidebar-cta">
+        <div class="cta-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Let's Build<br>Something Great</h3>
+        <p>Interested in working together? Feel free to reach out!</p>
+        <a class="btn primary full" href="#contact">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="sidebar-footer">
+        <div>© 2026 Denmark S. Balane</div>
+        <div><a href="#">Privacy</a><span>•</span><a href="#">Terms</a></div>
+      </div>
+    </aside>
+
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="topbar-spacer"></div>
+        <div class="top-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+            <span class="sun"><i class="fa-solid fa-sun"></i></span>
+            <span class="moon"><i class="fa-solid fa-moon"></i></span>
+          </button>
+          <a class="btn outline" href="#contact"><i class="fa-solid fa-download"></i> Download CV</a>
+        </div>
+      </header>
+
+      <section class="hero" id="home">
+        <div class="hero-bg-lines"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Denmark S. Balane</h1>
+          <div class="hero-meta"><strong>20 years old</strong><span>•</span><strong>Front-End Developer</strong></div>
+          <p class="hero-text">
+            I'm a 20-year-old aspiring front-end developer, passionate about building clean,
+            responsive, and user-friendly web experiences. I love turning ideas into functional
+            and visually appealing websites.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects"><i class="fa-solid fa-briefcase"></i> View My Projects</a>
+            <a class="btn outline" href="#contact"><i class="fa-solid fa-download"></i> Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-image-wrap">
+            <img class="hero-main-image" src="assets/hero-original.png" alt="Blue-haired anime character">
+          </div>
+          <div class="hero-slogan">CODE<br>BUILD<br>IMPROVE<div class="slogan-line"></div></div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">MY WORK</p>
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've worked on.</p>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image"><img src="assets/finals-act-2.png" alt="Finals Act 2 preview"></div>
+            <div class="project-info">
+              <div><h3>Finals Act 2</h3><p>HTML &amp; CSS <span>•</span> JavaScript <span>•</span> Web Project</p></div>
+              <button class="view-project" data-project="Finals Act 2"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image"><img src="assets/act-4-midterm.png" alt="Act 4 Midterm preview"></div>
+            <div class="project-info">
+              <div><h3>Act 4 Midterm</h3><p>HTML &amp; CSS <span>•</span> Web Project</p></div>
+              <button class="view-project" data-project="Act 4 Midterm"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image"><img src="assets/act-3-midterm.png" alt="Act 3 Midterm preview"></div>
+            <div class="project-info">
+              <div><h3>Act 3 Midterm</h3><p>HTML &amp; CSS <span>•</span> Web Project</p></div>
+              <button class="view-project" data-project="Act 3 Midterm"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image"><img src="assets/act-1-midterm.png" alt="Act 1 Midterm preview"></div>
+            <div class="project-info">
+              <div><h3>Act 1 Midterm</h3><p>HTML <span>•</span> Lists &amp; Layout</p></div>
+              <button class="view-project" data-project="Act 1 Midterm"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="about-card">
+          <div class="about-copy">
+            <p class="section-kicker">ABOUT ME</p>
+            <h2>Who I Am</h2>
+            <p>
+              I'm Denmark S. Balane, a 20-year-old aspiring front-end developer from the Philippines.
+              I enjoy creating simple, clean, and responsive websites, and I'm always eager to learn,
+              improve, and turn my ideas into real projects.
+            </p>
+            <div class="facts">
+              <div class="fact"><i class="fa-solid fa-user"></i><span>Age<strong>20 years old</strong></span></div>
+              <div class="fact"><i class="fa-solid fa-location-dot"></i><span>Location<strong>Philippines</strong></span></div>
+            </div>
+          </div>
+
+          <div class="skills-side" id="skills">
+            <p class="skill-title">Skills</p>
+            <div class="chips">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+              <span>Git &amp; GitHub</span><span>VS Code</span><span>MongoDB (Learning)</span>
+            </div>
+            <p class="skill-title interest-title">Interests</p>
+            <div class="interests">
+              <span><i class="fa-solid fa-code"></i>Web Development</span>
+              <span><i class="fa-solid fa-book-open"></i>Anime &amp; Manga</span>
+              <span><i class="fa-solid fa-gamepad"></i>Gaming</span>
+              <span><i class="fa-solid fa-music"></i>Music</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card">
+          <div>
+            <p class="section-kicker">CONTACT</p>
+            <h2>Let's build something together.</h2>
+            <p>I'm open to student projects, collaborations, and opportunities to grow as a developer.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> Email Me</a>
+            <a class="btn outline" href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Denmark S. Balane — Personal Portfolio</span>
+        <span>Made with HTML, CSS &amp; JavaScript</span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-check"></i><span></span></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
